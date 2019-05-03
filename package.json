@@ -1,5 +1,5 @@
 {
-  "name": "Combinatorics",
+  "name": "combinatorics-ts",
   "jest": {
     "verbose": true
   },
