@@ -1,0 +1,42 @@
+{
+  "name": "Combinatorics",
+  "jest": {
+    "verbose": true
+  },
+  "version": "1.0.4",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json --outDir dist/",
+    "test": "jest",
+    "test-coverage": "jest --coverage"
+  },
+  "author": "dry.indus <dry.indus@gmail> (https://github.com/dry-indus)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dry-indus/Combinatorics.git"
+  },
+  "homepage": "https://github.com/dry-indus/Combinatorics",
+  "bugs": {
+    "url": "https://github.com/dry-indus/Combinatorics/issues"
+  },
+  "license": "ISC",
+  "description": "Combinatorics of typescript, non-recursive implementation, and efficient and convenient",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.12",
+    "dts-jest": "^23.0.0",
+    "jest": "^24.7.1",
+    "jest-html-reporter": "^2.5.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.4"
+  },
+  "keywords": [
+    "typescripts",
+    "type",
+    "pick",
+    "omit"
+  ]
+}

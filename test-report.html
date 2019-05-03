@@ -1,0 +1,124 @@
+<html><head><meta charset="utf-8"/><title>Test Report</title><style type="text/css">html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+body {
+	padding: 1rem;
+	font-size: 0.85rem;
+}
+header {
+	display: flex;
+	align-items: center;
+}
+#title {
+	margin: 0;
+	flex-grow: 1;
+}
+#logo {
+	height: 4rem;
+}
+#timestamp {
+	font-weight: bold;
+	color: #666;
+	margin-bottom: 0.5rem;
+}
+#summary {
+	color: #999;
+	margin-bottom: 1rem;
+}
+.suite-info {
+	padding: 1rem;
+	background-color: #eee;
+	border-bottom: 2px solid #999;
+	color: #999;
+	display: flex;
+	align-items: center;
+}
+.suite-info .suite-path {
+	font-weight: bold;
+	word-break: break-all;
+	flex-grow: 1;
+}
+.suite-info .suite-time {
+	margin-left: 0.5rem;
+	padding: 0.2rem 0.3rem;
+	font-size: 0.75rem;
+}
+.suite-info .suite-time.warn {
+	background-color: #D8000C;
+	color: #fff;
+}
+.suite-table {
+	width: 100%;
+	font-size: 0.85rem;
+	margin-bottom: 1em;
+}
+.suite-table td {
+	padding: 0.5rem;
+}
+.suite-table tr.passed {
+	background-color: #DFF2BF;
+	color: #4F8A10;
+}
+.suite-table tr.pending {
+	background-color: #FEEFB3;
+	color: #9F6000;
+}
+.suite-table tr.failed {
+	background-color: #FFBABA;
+	color: #D8000C;
+}
+.suite-table td {
+	font-size: 0.85rem;
+	border-bottom: 1px solid #aaa;
+	vertical-align: top;
+}
+.suite-table td.suite {
+	font-weight: bold;
+	width: 20%;
+}
+.suite-table td.test {
+	font-style: italic;
+	width: 60%;
+}
+.suite-table td.test .failureMsg {
+	font-size: 1rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+.suite-table td.result {
+	width: 20%;
+	text-align: right;
+}
+
+/* CONSOLE LOGS */
+.suite-consolelog {
+	margin-bottom: 2rem;
+	padding: 1rem;
+	background-color: #efefef;
+}
+.suite-consolelog-header {
+	font-weight: bold;
+}
+.suite-consolelog-item {
+	padding: 0.5rem;
+}
+.suite-consolelog-item pre {
+	margin: 0;
+}
+.suite-consolelog-item-origin {
+	color: #777;
+	font-weight: bold;
+}
+.suite-consolelog-item-message {
+	color: #000;
+	font-size: 1rem;
+	padding: 0 0.5rem;
+}
+</style></head><body><div id="jesthtml-content"><header><h1 id="title">Test Report</h1></header><div id="metadata-container"><div id="timestamp">Start: 19-05-03 20:33:45</div><div id="summary">26 tests -- 26 passed / 0 failed / 0 pending</div></div><div class="suite-info"><div class="suite-path">/Users/mac/Documents/code/Combinatorics/src/p.spec.ts</div><div class="suite-time">0.826s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">test P</td><td class="test">[3, 2] should equal 6</td><td class="result">passed in 0.005s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[3, 3] should equal 6</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[1, 1] should equal 1</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[2, 5] should equal 0</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[3.3, 2] should equal 6</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[3.3, 2.2] should equal 6</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test P</td><td class="test">[3, 2.2] should equal 6</td><td class="result">passed in 0s</td></tr></table><div class="suite-info"><div class="suite-path">/Users/mac/Documents/code/Combinatorics/src/combination.spec.ts</div><div class="suite-time">0.832s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">test Combination</td><td class="test">test Combination runtime type</td><td class="result">passed in 0.004s</td></tr></table><div class="suite-info"><div class="suite-path">/Users/mac/Documents/code/Combinatorics/src/combinationBig.spec.ts</div><div class="suite-time">0.87s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 1</td><td class="result">passed in 0.006s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 2</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 3</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 4</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 5</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">6 pick or omit 6</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">5 pick 10</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test CombinationBig</td><td class="test">error pick or omit</td><td class="result">passed in 0.018s</td></tr></table><div class="suite-info"><div class="suite-path">/Users/mac/Documents/code/Combinatorics/src/combination30.spec.ts</div><div class="suite-time">3.926s</div></div><table class="suite-table" cellspacing="0" cellpadding="0"><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 1</td><td class="result">passed in 0.005s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 2</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 3</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 4</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 5</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">6 pick or omit 6</td><td class="result">passed in 0.001s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">30 pick 15</td><td class="result">passed in 3.035s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">31 pick 1</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">5 pick 10</td><td class="result">passed in 0s</td></tr><tr class="passed"><td class="suite">test Combination30</td><td class="test">error pick or omit</td><td class="result">passed in 0.019s</td></tr></table></div></body></html>
