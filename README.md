@@ -1,2 +1,2 @@
-# utility-prop
-edit object property of typescript, For example, pick or omit a object property
+# Combinatorics
+Combinatorics of typescript, non-recursive implementation, and efficient and convenient
