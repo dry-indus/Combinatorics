@@ -247,7 +247,7 @@ describe('test Combination30', () => {
         expect(omitRet.length).toEqual(comb.count);
     })
 
-    test('30 pick 15', () => {
+    test('30 pick 15 count', () => {
         const a = new Array(30).fill(1)
         const comb = new Combination30(a.length, 15)
         let sum = 0

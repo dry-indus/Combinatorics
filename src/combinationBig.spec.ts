@@ -247,6 +247,16 @@ describe('test CombinationBig', () => {
         expect(omitRet.length).toEqual(comb.count);
     })
 
+    test('30 pick 15 count', () => {
+        const a = new Array(30).fill(1)
+        const comb = new CombinationBig(a.length, 15)
+        let sum = 0
+        for (let i of comb) {
+            sum++
+        }
+        expect(sum).toBe(comb.count);
+    })
+
     test('5 pick 10', () => {
         const comb = new CombinationBig(5, 10)
         let sum = 0
