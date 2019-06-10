@@ -16,8 +16,8 @@ export const C = function (m: number, n: number) {
 }
 
 interface IndexesInteface {
-    pickFrom<E>(ary: E[]): E[]
-    omitFrom<E>(ary: E[]): E[]
+    pickFrom<E>(ary: ReadonlyArray<E>): ReadonlyArray<E>
+    omitFrom<E>(ary: ReadonlyArray<E>):ReadonlyArray<E>
 }
 
 abstract class AbstractIndexes<T> implements IndexesInteface {
@@ -26,7 +26,7 @@ abstract class AbstractIndexes<T> implements IndexesInteface {
         protected indexes: T
     ) { }
 
-    pickFrom<E>(ary: E[]): E[] {
+    pickFrom<E>(ary: ReadonlyArray<E>): ReadonlyArray<E> {
         if (this.m > ary.length) {
             throw new RangeError
         }
@@ -35,7 +35,7 @@ abstract class AbstractIndexes<T> implements IndexesInteface {
         return result
     }
 
-    omitFrom<E>(ary: E[]): E[] {
+    omitFrom<E>(ary: ReadonlyArray<E>): ReadonlyArray<E> {
         if (this.m > ary.length) {
             throw new RangeError
         }
